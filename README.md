@@ -1,3 +1,13 @@
+---
+title: Securing Communication to Controller Manager and Scheduler
+header-includes:
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="joshrosso.com" />
+    <meta name="twitter:title" content="Securing Communication to Controller Manager and Scheduler" />
+    <meta name="twitter:description" content="Taking a look at communicating with the secure ports for kube-scheduler and kube-controller-manager. Covering both tls and auth (SubjectAccessReview) and how to we hook up to things like prometheus." />
+    <meta name="twitter:image" content="https://joshrosso.com/images/shot.png" />
+---
+
 # Securing Controller Manager and Scheduler Metrics
 
 I've been looking into interacting with the secure (tls) ports for the `kube-scheduler` and `kube-controller-manager` and wanted to share my findings.
